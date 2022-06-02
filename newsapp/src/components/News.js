@@ -8,9 +8,9 @@ export default class News extends Component {
           This is a news component
           <NewsItem/>
           <NewsItem/>
+          {/* <NewsItem/>
           <NewsItem/>
-          <NewsItem/>
-          <NewsItem/>
+          <NewsItem/> */}
         
         </div>
     )

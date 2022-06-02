@@ -4,6 +4,7 @@ export default class Newsitem extends Component {
   render() {
     return (
       <div>Newsitem</div>
+  
     )
   }
 }
