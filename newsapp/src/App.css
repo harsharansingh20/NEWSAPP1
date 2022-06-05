@@ -1,3 +1,7 @@
+body{
+  background-image: linear-gradient(blue,red,yellow);
+
+}
 .App {
   text-align: center;
 }
@@ -26,6 +30,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.navbar navbar-expand-lg {
+  background-image: linear-gradient(blue,red);
 }
 
 @keyframes App-logo-spin {
