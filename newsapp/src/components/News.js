@@ -218,6 +218,10 @@ export default class News extends Component {
       }
     }
 
+  componentDidMount(){
+    console.log("cdm")
+  }
+
   render() {
     return (
       <div className="container my-3">
@@ -225,7 +229,7 @@ export default class News extends Component {
         <div className="row">
         {this.state.articles.map((element)=>{
         return  <div className="col-md-4 my-4"key={element.url} >
-          <NewsItem  title={element.title.slice(0 ,44)} description={element.description} imageurl={element.urlToImage} newsurl={element.url} />
+          <NewsItem  title={element.title?element.title.slice(0 ,44):""} description={element.description} imageurl={element.urlToImage} newsurl={element.url} />
         </div>
         })}
           
