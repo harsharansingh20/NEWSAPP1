@@ -8,7 +8,7 @@ export default class News extends Component {
         <h2 className="heading">News-Monkey Top Headlines</h2>
         <div className="row">
           <div className="col-md-4 my-4">
-            <NewsItem title="1"/>
+            <NewsItem title="1" imageurl="https://images.unsplash.com/photo-1531415074968-036ba1b575da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80" newsurl="todo" />
           </div>
           <div className="col-md-4 my-4">
             <NewsItem  title="2" />
