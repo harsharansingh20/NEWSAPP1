@@ -218,9 +218,14 @@ export default class News extends Component {
       }
     }
 
-  componentDidMount(){
+  async componentDidMount(){
     console.log("cdm")
-  }
+    let url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=499d49664ef94b21b1dc3d9d3283fc2d";
+    let data =  await fetch(url);
+    let parsedData = await data.json()
+    console.log(parsedData);
+    this.state({articles:parsedData.articles})
+    }
 
   render() {
     return (
