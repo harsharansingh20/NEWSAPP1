@@ -35,10 +35,15 @@ export default class News extends Component {
           <NewsItem  title={element.title?element.title.slice(0, 44):""} description={element.description?element.description.slice(0, 88):""} imageurl={element.urlToImage} newsurl={element.url} />
         </div>
         })}
-          
-         
-        </div>
-      </div>
+       </div>
+
+<div className="container d-flex justify-content-between">
+<button type="button " class="btn btn-dark">Previous &larr; </button>
+<button type="button " class="btn btn-dark">Next &rarr;</button>
+
+
+</div>
+</div>
     );
   }
 }
