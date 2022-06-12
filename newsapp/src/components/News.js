@@ -88,8 +88,8 @@ export default class News extends Component {
         <h2 className="heading">News-Monkey Top Headlines</h2>
         <div className="row">
         {this.state.articles.map((element)=>{
-        return  <div className="col-md-4 my-4"key={element.url} >
-          <NewsItem  title={element.title?element.title.slice(0, 90):""} description={element.description?element.description.slice(0, 88):""} imageurl={element.urlToImage} newsurl={element.url} />
+        return  <div className="col-md-4 my-4" key={element.url} >
+          <NewsItem  title={element.title} description={element.description} imageurl={element.urlToImage} newsurl={element.url} />
         </div>
         })}
        </div>
